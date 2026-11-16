@@ -1,0 +1,12 @@
+{
+  "id": "dice-oracle",
+  "name": "Dice Oracle",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "main": "index.js",
+  "description": "Ask a yes/no question, roll a d20 and let the oracle answer. Push the answer to the Stage.",
+  "author": "RuneSlate",
+  "permissions": ["dice", "sfx", "stage", "storage"],
+  "widgets": [{ "type": "oracle", "name": "Dice Oracle", "width": 280, "height": 200 }],
+  "commands": [{ "id": "ask-oracle", "title": "Ask the Oracle" }]
+}

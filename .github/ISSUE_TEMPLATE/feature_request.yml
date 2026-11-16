@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest an idea or improvement for RuneSlate or the plugin SDK.
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [App feature, Plugin SDK (window.runeSlateApi), Stage / player view, Localization, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Which problem would this solve at the table?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds you use today

@@ -1,0 +1,13 @@
+{
+  "name": "runeslate-plugin-sdk",
+  "private": true,
+  "description": "Plugin SDK tools and samples for RuneSlate",
+  "type": "module",
+  "scripts": {
+    "pack": "node tools/pack-plugin.mjs",
+    "pack-example": "node tools/pack-plugin.mjs examples/plugins/dice-oracle examples/plugins/dice-oracle.runeslate"
+  },
+  "devDependencies": {
+    "fflate": "^0.8.3"
+  }
+}

@@ -1,0 +1,50 @@
+name: Bug report
+description: Something in RuneSlate does not work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! Please do not attach your `world.db` or private campaign content.
+  - type: input
+    id: version
+    attributes:
+      label: RuneSlate version
+      description: Settings → About, e.g. 0.7.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS (Apple Silicon), macOS (Intel), Linux (AppImage), Linux (.deb)]
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Slate / widgets, Lore, Vault, Map, Stage window, Audio, Calendar / weather, Encyclopedia / generators, Plugins, MCP integration, Updates / installer, Other]
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, error messages, plugin name
