@@ -17,7 +17,20 @@ Get the latest installer for **Windows** (`.exe`), **macOS** (`.dmg`) or **Linux
 the [**Releases**](https://github.com/skyfish-unltd/RuneSlate/releases/latest) page. The release notes are listed
 with every version. Installed copies update themselves automatically.
 
-> macOS builds are not notarized yet. On first launch, right-click the app → **Open**.
+### macOS
+
+- **Pick the right build:** Apple Silicon (M1/M2/M3/M4) → `…-arm64.dmg` / `…-arm64-mac.zip`;
+  Intel Macs → `…-x64.dmg` / `…-x64-mac.zip`. The Intel build also starts on Apple Silicon, but runs slowly
+  through Rosetta.
+- **First launch:** the builds are not notarized yet. Right-click the app → **Open**. On macOS 15 (Sequoia)
+  and later, open it once, then go to **System Settings → Privacy & Security** and click **Open Anyway**.
+- If macOS still says the app "is damaged", remove the download quarantine once in Terminal:
+
+  ```bash
+  xattr -dr com.apple.quarantine /Applications/RuneSlate.app
+  ```
+
+- If the in-app update fails on macOS, download the new version from the Releases page and replace the app.
 
 ## Plugin SDK
 
